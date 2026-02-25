@@ -1,0 +1,139 @@
+/* ネット予約ページ専用スタイル */
+
+.reserve-container {
+  max-width: 760px;
+  text-align: center;
+}
+
+.reserve-intro {
+  margin-bottom: 50px;
+}
+
+.reserve-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(114, 57, 0);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.reserve-desc {
+  font-size: 15px;
+  line-height: 2;
+  color: rgb(114, 57, 0);
+}
+
+.reserve-btn-wrap {
+  margin-bottom: 60px;
+}
+
+.reserve-big-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 50px;
+  background-color: rgb(114, 57, 0);
+  color: rgb(247, 243, 235);
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  transition: opacity 0.3s ease;
+}
+
+.reserve-big-btn:hover {
+  opacity: 0.8;
+  color: rgb(247, 243, 235);
+}
+
+.reserve-btn-icon {
+  font-size: 28px;
+}
+
+.reserve-btn-text {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.reserve-btn-text small {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.reserve-info {
+  background-color: rgba(255, 250, 233, 0.6);
+  padding: 30px 40px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.reserve-info h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(114, 57, 0);
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(114, 57, 0, 0.3);
+}
+
+.reserve-info ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.reserve-info ul li {
+  font-size: 14px;
+  color: rgb(114, 57, 0);
+  line-height: 2;
+}
+
+.reserve-tel-wrap {
+  padding: 30px;
+  border: 1px solid rgba(114, 57, 0, 0.3);
+}
+
+.reserve-tel-label {
+  font-size: 14px;
+  color: rgb(114, 57, 0);
+  margin-bottom: 16px;
+}
+
+.reserve-tel-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(114, 57, 0);
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.reserve-tel-link:hover {
+  opacity: 0.75;
+  color: rgb(114, 57, 0);
+}
+
+.reserve-tel-icon {
+  font-size: 24px;
+}
+
+.reserve-tel-hours {
+  font-size: 13px;
+  color: rgb(114, 57, 0);
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .reserve-big-btn {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+
+  .reserve-info {
+    padding: 20px;
+  }
+
+  .reserve-tel-link {
+    font-size: 22px;
+  }
+}

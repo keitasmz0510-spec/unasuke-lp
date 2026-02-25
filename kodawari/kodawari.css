@@ -1,0 +1,52 @@
+/* こだわりページ専用スタイル */
+
+.concept .ttl {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(114, 57, 0);
+  padding: 20px 0 16px;
+  border-bottom: 1px solid rgba(114, 57, 0, 0.3);
+  margin-bottom: 28px;
+}
+
+.concept .inner.lawer_content_flex01 {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.concept .lawer_content_flex01_left {
+  width: 280px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.concept .lawer_content_flex01_left img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.concept-text {
+  flex: 1;
+  font-size: 15px;
+  line-height: 2;
+  color: rgb(114, 57, 0);
+  padding-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .concept .inner.lawer_content_flex01 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .concept .lawer_content_flex01_left {
+    width: 100%;
+  }
+
+  .concept .lawer_content_flex01_left img {
+    height: 220px;
+  }
+}

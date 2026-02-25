@@ -1,0 +1,49 @@
+/* ギャラリーページ専用スタイル */
+
+.gallery-section {
+  margin-bottom: 60px;
+}
+
+.gallery-section .heading3 {
+  margin-bottom: 24px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.gallery-list li {
+  width: calc(25% - 15px);
+  overflow: hidden;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.gallery-list li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.gallery-list li:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .gallery-list li {
+    width: calc(33.33% - 14px);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-list li {
+    width: calc(50% - 10px);
+  }
+}

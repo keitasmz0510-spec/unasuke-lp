@@ -1,0 +1,102 @@
+/* メニューページ専用スタイル */
+
+.lawer_content_wrap {
+  border-bottom: 1px solid rgba(114, 57, 0, 0.15);
+}
+
+.lawer_content_wrap:last-child {
+  border-bottom: none;
+}
+
+.menu_row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 0;
+  gap: 0;
+}
+
+.menu_row .lawer_content_flex01_left {
+  width: 200px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.menu_row .lawer_content_flex01_left img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.menu_row .lawer_content_flex01_right {
+  display: flex;
+  flex: 1;
+  align-items: stretch;
+  list-style: none;
+  padding: 0;
+}
+
+.menu_row .list_h {
+  flex: 1;
+  padding: 20px;
+}
+
+.menu_row .list_d {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  min-width: 180px;
+  justify-content: flex-end;
+}
+
+/* 通常行（画像なし） */
+.table_row:not(.menu_row) .table_row_inner {
+  display: flex;
+  width: 100%;
+}
+
+.table_row:not(.menu_row) .list_h {
+  flex: 1;
+  padding: 16px 20px;
+}
+
+.table_row:not(.menu_row) .list_d {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  min-width: 180px;
+  justify-content: flex-end;
+}
+
+@media (max-width: 700px) {
+  .menu_row {
+    flex-direction: column;
+  }
+
+  .menu_row .lawer_content_flex01_left {
+    width: 100%;
+  }
+
+  .menu_row .lawer_content_flex01_left img {
+    height: 200px;
+    width: 100%;
+  }
+
+  .menu_row .lawer_content_flex01_right {
+    flex-direction: column;
+  }
+
+  .menu_row .list_d {
+    justify-content: flex-start;
+    padding-top: 0;
+    min-width: unset;
+  }
+
+  .table_row:not(.menu_row) .table_row_inner {
+    flex-direction: row;
+  }
+
+  .table_row:not(.menu_row) .list_d {
+    min-width: 120px;
+  }
+}

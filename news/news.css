@@ -1,0 +1,17 @@
+/* お知らせページ専用スタイル */
+
+.news .container.news {
+  min-height: 300px;
+}
+
+.news-empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: rgb(114, 57, 0);
+  font-size: 16px;
+}
+
+.category .container {
+  padding-top: 40px;
+  padding-bottom: 0;
+}
